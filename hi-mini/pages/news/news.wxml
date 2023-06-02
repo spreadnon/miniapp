@@ -1,0 +1,14 @@
+<PageHeader></PageHeader>
+<view class="news">
+  <view class="content">
+    <view class="box" wx:for="{{newsArr}}" wx:key="_id">
+      <news-item item='{{item}}'></news-item>
+    </view>
+  </view>
+  <view class="loadout">
+    <van-loading size="24px" wx:if="{{loading}}">加载中...</van-loading>
+    <view class="nodata" wx:if="{{isData}}">
+      没有更多数据了～
+    </view>
+  </view>
+</view>

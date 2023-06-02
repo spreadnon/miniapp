@@ -1,0 +1,67 @@
+<!--index.wxml-->
+<PageHeader></PageHeader>
+
+<view class="banner">
+  <swiper previous-margin="30rpx" circular autoplay interval="3000" indicator-dots indicator-active-color="#fff">
+    <swiper-item>
+      <image src="/images/huiyuan.png" mode=""/>
+    </swiper-item>
+    <swiper-item>
+      <image src="/images/huiyuan.png" mode=""/>
+    </swiper-item>
+    <swiper-item>
+      <image src="/images/huiyuan.png" mode=""/>
+    </swiper-item>
+  </swiper>
+</view>
+
+<view class="scrollNav">
+  <scroll-view scroll-x class="scr-View">
+    <navigator open-type="reLaunch" url="/pages/classify/classify?idx={{index}}" class="item" wx:for="{{navArr}}" wx:key="_id">
+      <view class="pic">
+        <image src="{{item.icon}}"  class="pic-image" mode=""/>
+      </view>
+      <view class="text">
+        {{item.classname}}
+      </view>
+    </navigator>
+  </scroll-view>
+</view>
+
+<view class="about">
+  <view class="pubTitle">
+    <view class="en">
+    introuduce
+    </view>
+    <view class="cn">
+    茶梅文化邮件公司
+    </view>
+    <view class="line">
+    </view>
+  </view>
+
+  <view class="content">
+    <view class="row">
+      DDL，网络流行词，deadline的英文缩写，指“死线”或“最后期限”，一般指某项任务截止的最后期限。比如某项工作的截止日，或学校收取入学申请书的最晚日期。
+    </view>
+    <view class="row">
+      在微信公众平台注册小程序，完成注册后可以同步进行信息完善和开发。填写小程序基本信息，包括名称、头像、介绍及服务范围等。完成小程序开发者绑定、开发信息配置后，开发者可下载开发者工具、参考开发文档进行小程序的开发和调试。完成小程序开发后，提交代码至微信团队审核，审核通过后即可发布（公测期间不能发布）。
+    </view>
+  </view>
+</view>
+
+<view class="news">
+  <view class="pubTitle">
+    <view class="en">News</view>
+    <view class="cn">新闻</view>
+    <view class="line"></view>
+  </view>
+  <view class="content">
+    <view class="box" wx:for="{{newsArr}}" wx:key="index">
+    
+      <news-item item="{{item}}"></news-item>
+    </view>
+  </view>
+</view>
+
+<PageFooter></PageFooter>

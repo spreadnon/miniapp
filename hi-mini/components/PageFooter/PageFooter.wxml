@@ -1,0 +1,10 @@
+<view class="footer">
+  <view class="row">Copyright © {{year}} Tencent. All Rights Reserved</view>
+  <view class="row">腾讯公司 版权所有</view>
+</view>
+
+<view class="kefu">
+  <button class="btn" open-type="contact">1</button>
+  <image src="/images/shop.png" mode="aspectFill" class="pic"/>
+  <view class="line"></view>
+</view>

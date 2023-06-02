@@ -1,0 +1,54 @@
+{
+    "pages": [
+        "pages/index/index",
+        "pages/classify/classify",
+        "pages/news/news",
+        "pages/newsDetail/newsDetail",
+        "pages/proDetail/proDetail"
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#000",
+        "navigationBarTitleText": "巷子深",
+        "navigationBarTextStyle": "white"
+    },
+
+    "sitemapLocation": "sitemap.json",
+    "tabBar": {
+        "color": "#b1b2b3",
+        "selectedColor": "#4c4d4e",
+        "list": [{
+                "pagePath": "pages/index/index",
+                "text": "首页",
+                "iconPath": "images/shop.png",
+                "selectedIconPath": "images/shop.png"
+
+            },
+            {
+                "pagePath": "pages/classify/classify",
+                "text": "分类",
+                "iconPath": "images/liwu.png",
+                "selectedIconPath": "images/liwu.png"
+            },
+            {
+                "pagePath": "pages/news/news",
+                "text": "新闻",
+                "iconPath": "images/huiyuan.png",
+                "selectedIconPath": "images/huiyuan.png"
+            }
+        ]
+    },
+    "usingComponents": {
+        "PageHeader": "components/PageHeader/PageHeader",
+        "news-item": "components/news-item/news-item",
+        "van-button": "@vant/weapp/button/index",
+        "van-icon": "@vant/weapp/icon/index",
+        "PageFooter": "components/PageFooter/PageFooter",
+        "van-loading": "@vant/weapp/loading/index",
+        "van-skeleton": "@vant/weapp/skeleton/index",
+        "van-tab": "@vant/weapp/tab/index",
+        "van-tabs": "@vant/weapp/tabs/index",
+        "product-item": "/components/product-item/product-item"
+    }
+
+}
